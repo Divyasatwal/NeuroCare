@@ -1,0 +1,52 @@
+/*import React from 'react';
+import '../PageStyles.css';
+
+const ALS = () => {
+  return (
+    <div className="page">
+      <div className="page-container">
+        <h1 className="page-title">ALS (Amyotrophic Lateral Sclerosis)</h1>
+        <p className="page-text">Detailed information coming soon...</p>
+      </div>
+    </div>
+  );
+};
+
+export default ALS;*/
+
+import React from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
+import SideNavbar from "../../components/SideNavbar";
+import "./DiseaseLayout.css";
+
+import Overview from "./mdd/Overview";
+import Causes from "./mdd/Causes";
+import Symptoms from "./mdd/Symptoms";
+import Diagnosis from "./mdd/Diagnosis";
+import Treatment from "./mdd/Treatment";
+import Prevention from "./mdd/Prevention";
+import Statistics from "./mdd/Statistics";
+import Resources from "./mdd/Resources";
+
+const MDD = () => {
+  return (
+    <div className="disease-layout">
+      <SideNavbar basePath="mdd" />
+      <div className="disease-content">
+        <Routes>
+          <Route index element={<Navigate to="overview" replace />} />
+          <Route path="overview" element={<Overview />} />
+          <Route path="causes" element={<Causes />} />
+          <Route path="symptoms" element={<Symptoms />} />
+          <Route path="diagnosis" element={<Diagnosis />} />
+          <Route path="treatment" element={<Treatment />} />
+          <Route path="prevention" element={<Prevention />} />
+          <Route path="statistics" element={<Statistics />} />
+          <Route path="support" element={<Resources />} />
+        </Routes>
+      </div>
+    </div>
+  );
+};
+
+export default MDD;

@@ -1,0 +1,276 @@
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 650px;
+  height: 85vh;
+  display: flex;
+  /* align-items: center; */
+    align-items: stretch;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* container should fill the hero height so children can use 100% */
+.hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch;   /* allow children to stretch vertically */
+  height: 100%;           /* <- IMPORTANT: fills the .hero height */
+  padding-left: 0;        /* optional, adjust as needed */
+}
+
+/* Background Image */
+.hero-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/neurology1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+/* Dark overlay */
+.hero-bg-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+/* Glassmorphic Content Box - Left Side */
+.hero-content-box {
+  max-width: 580px;
+  height:100%;
+  width: 40%; 
+  /* background: rgba(255, 255, 255, 0.1); */
+  /* backdrop-filter: blur(20px); */
+  /* border: 1px solid rgba(255, 255, 255, 0.2); */
+  background-color:#0a425c;
+  /* border-radius: 24px; */
+   display: flex;       /* to vertically center child content */
+    flex-direction: column;
+  padding: 50px 45px;
+justify-content: center; 
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+  animation: slideInLeft 1s ease-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Badge */
+.hero-badge {
+  display: inline-block;
+  background: rgba(15, 118, 110, 0.9);
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(15, 118, 110, 0.4);
+}
+
+/* Title */
+.hero-title {
+  font-size: 5rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 50px;
+  margin-top: 60px;;
+  line-height: 1.2;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  font-family: poppins;
+}
+
+/* .hero-highlight {
+  color: #5eead4;
+  text-shadow: 0 0 20px rgba(94, 234, 212, 0.6);
+} */
+
+/* Subtitle */
+.hero-subtitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fbbf24;
+  margin-bottom: 20px;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Description */
+.hero-description {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.hero-btn-primary {
+  background: linear-gradient(135deg, #0f766e 0%, #14b8a6 100%);
+  color: white;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(15, 118, 110, 0.4);
+  transition: all 0.3s ease;
+}
+
+.hero-btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(15, 118, 110, 0.5);
+}
+
+.hero-btn-secondary {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-3px);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 650px;
+    height: auto;
+    align-items: center;
+  }
+
+  .hero-container {
+    padding: 3rem 2rem;
+    height: auto;
+    align-items: center;
+  }
+
+  .hero-bg-image::after {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.6) 100%);
+  }
+
+  .hero-content-box {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    padding: 40px 35px;
+    background-color: #0a425c;
+    border-radius: 20px;
+  }
+
+  .hero-badge {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  .hero-title {
+    font-size: 2.75rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .hero-description {
+    font-size: 1.05rem;
+    margin-bottom: 25px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-btn-primary,
+  .hero-btn-secondary {
+    width: 100%;
+    padding: 13px 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 600px;
+    height: auto;
+  }
+
+  .hero-container {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .hero-content-box {
+    padding: 35px 30px;
+    border-radius: 16px;
+  }
+
+  .hero-badge {
+    font-size: 0.85rem;
+    padding: 7px 16px;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .hero-btn-primary,
+  .hero-btn-secondary {
+    padding: 12px 24px;
+    font-size: 0.95rem;
+  }
+}

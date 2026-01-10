@@ -1,0 +1,252 @@
+.platform-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #fef3e2 0%, #fdf8f3 50%, #f8f4ef 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Sketch-style neuron decorations */
+.platform-section::before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  right: 80px;
+  width: 100px;
+  height: 100px;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='50' cy='50' r='15' fill='none' stroke='%230f766e' stroke-width='2' opacity='0.15'/%3E%3Cline x1='50' y1='35' x2='30' y2='10' stroke='%230f766e' stroke-width='2' opacity='0.15'/%3E%3Cline x1='50' y1='35' x2='70' y2='10' stroke='%230f766e' stroke-width='2' opacity='0.15'/%3E%3Cline x1='50' y1='65' x2='30' y2='90' stroke='%230f766e' stroke-width='2' opacity='0.15'/%3E%3Cline x1='50' y1='65' x2='70' y2='90' stroke='%230f766e' stroke-width='2' opacity='0.15'/%3E%3Ccircle cx='30' cy='10' r='5' fill='none' stroke='%230f766e' stroke-width='2' opacity='0.15'/%3E%3Ccircle cx='70' cy='10' r='5' fill='none' stroke='%230f766e' stroke-width='2' opacity='0.15'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+  animation: float 8s ease-in-out infinite;
+}
+
+.platform-section::after {
+  content: '';
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  width: 80px;
+  height: 80px;
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='40' cy='40' r='12' fill='none' stroke='%23f97316' stroke-width='2' opacity='0.12'/%3E%3Cline x1='40' y1='28' x2='20' y2='5' stroke='%23f97316' stroke-width='2' opacity='0.12'/%3E%3Cline x1='40' y1='28' x2='60' y2='5' stroke='%23f97316' stroke-width='2' opacity='0.12'/%3E%3Ccircle cx='20' cy='5' r='4' fill='none' stroke='%23f97316' stroke-width='2' opacity='0.12'/%3E%3Ccircle cx='60' cy='5' r='4' fill='none' stroke='%23f97316' stroke-width='2' opacity='0.12'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+  animation: float 6s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+.platform-section .container {
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+  z-index: 1;
+}
+
+.platform-section h2 {
+  color: #0f172a;
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.platform-section .subtitle {
+  font-size: 1.15rem;
+  color: #64748b;
+  margin-bottom: 60px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.platform-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.platform-cards .card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 0;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  border: 2px solid #f1f5f9;
+  overflow: visible;
+  position: relative;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+.platform-cards .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(15, 118, 110, 0.15);
+  border-color: #0f766e;
+}
+
+/* Circular Icon - Half outside card */
+.platform-cards .icon {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0f766e 0%, #14b8a6 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(15, 118, 110, 0.3);
+  border: 5px solid #ffffff;
+  transition: all 0.4s ease;
+  z-index: 2;
+}
+
+.platform-cards .card:hover .icon {
+  transform: translateX(-50%) scale(1.1) rotate(10deg);
+  box-shadow: 0 15px 40px rgba(15, 118, 110, 0.4);
+}
+
+/* Alternate colors for icons */
+.platform-cards .card:nth-child(2) .icon {
+  background: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
+  box-shadow: 0 10px 30px rgba(249, 115, 22, 0.3);
+}
+
+.platform-cards .card:nth-child(3) .icon {
+  background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);
+}
+
+.platform-cards .card:nth-child(4) .icon {
+  background: linear-gradient(135deg, #ec4899 0%, #f472b6 100%);
+  box-shadow: 0 10px 30px rgba(236, 72, 153, 0.3);
+}
+
+.icon-image {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  transition: all 0.4s ease;
+}
+
+.platform-cards .card:hover .icon-image {
+  transform: scale(1.05);
+}
+
+/* Text content */
+.platform-cards h3 {
+  color: #0f172a;
+  margin-bottom: 12px;
+  font-size: 1.35rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.platform-cards p {
+  font-size: 1rem;
+  color: #64748b;
+  line-height: 1.6;
+  text-align: center;
+  padding: 0 20px;
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .platform-section {
+    padding: 60px 20px;
+  }
+
+  .platform-section::before,
+  .platform-section::after {
+    display: none;
+  }
+
+  .platform-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .platform-section .subtitle {
+    font-size: 1.05rem;
+    margin-bottom: 50px;
+  }
+
+  .platform-cards {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+  }
+
+  .platform-cards .card {
+    padding-top: 70px;
+    min-height: 280px;
+  }
+
+  .platform-cards .icon {
+    width: 100px;
+    height: 100px;
+    top: -50px;
+  }
+
+  .icon-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .platform-cards h3 {
+    font-size: 1.2rem;
+  }
+
+  .platform-cards p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .platform-section {
+    padding: 50px 15px;
+  }
+
+  .platform-section h2 {
+    font-size: 1.9rem;
+  }
+
+  .platform-section .subtitle {
+    font-size: 1rem;
+  }
+
+  .platform-cards {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .platform-cards .card {
+    padding-top: 65px;
+  }
+
+  .platform-cards .icon {
+    width: 90px;
+    height: 90px;
+    top: -45px;
+  }
+
+  .icon-image {
+    width: 45px;
+    height: 45px;
+  }
+}

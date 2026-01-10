@@ -1,0 +1,477 @@
+
+
+
+/* Main Container */
+.confusion-matrix-page {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated Neuron Background */
+.neuron-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(135deg, #0a1929 0%, #1a2942 100%);
+  z-index: 0;
+}
+
+/* Floating Particles */
+.floating-particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.particle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  filter: blur(40px);
+  animation: float 20s infinite ease-in-out;
+}
+
+.particle-1 {
+  background: rgba(56, 189, 248, 0.3);
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.particle-2 {
+  background: rgba(168, 85, 247, 0.3);
+  top: 60%;
+  right: 15%;
+  animation-delay: 5s;
+}
+
+.particle-3 {
+  background: rgba(251, 146, 60, 0.3);
+  bottom: 20%;
+  left: 20%;
+  animation-delay: 10s;
+}
+
+.particle-4 {
+  background: rgba(34, 197, 94, 0.3);
+  top: 40%;
+  right: 30%;
+  animation-delay: 15s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(50px, -50px) scale(1.1);
+  }
+  50% {
+    transform: translate(-30px, 40px) scale(0.9);
+  }
+  75% {
+    transform: translate(40px, 30px) scale(1.05);
+  }
+}
+
+/* Main Content */
+.confusion-main {
+  position: relative;
+  z-index: 10;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+/* Hero Section */
+.confusion-hero-section {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.confusion-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(168, 85, 247, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  color: #c4b5fd;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  animation: pulse 2s infinite;
+}
+
+.confusion-badge-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(168, 85, 247, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(168, 85, 247, 0);
+  }
+}
+
+.confusion-hero-title {
+  font-size: 4rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #ffffff 0%, #c4b5fd 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.confusion-hero-description {
+  font-size: 1.3rem;
+  color: #99f6e4;
+  max-width: 48rem;
+  margin: 0 auto 2rem;
+}
+
+/* Comparison Grid */
+/*.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}*/
+
+ /*Comparison Grid */
+.comparison-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.comparison-grid .confusion-disease-card {
+  flex: 0 1 calc(33.333% - 1.5rem);
+  min-width: 320px;
+  max-width: 400px;
+}
+
+/* Comparison Grid */
+/*.comparison-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  align-items: stretch;
+}
+
+.comparison-grid .disease-card {
+  flex: 0 1 calc(33.333% - 1.5rem);
+  min-width: 320px;
+  max-width: 400px;
+  height: 650px;
+}*/
+
+/* Disease Cards */
+.confusion-disease-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  cursor: pointer;
+  opacity: 0;
+  animation: slideUp 0.6s forwards;
+}
+
+/* Disease Cards */
+/*.disease-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  cursor: pointer;
+  opacity: 0;
+  animation: slideUp 0.6s forwards;
+  display: flex;
+  flex-direction: column;
+  min-height: 600px;
+}*/
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.confusion-disease-card {
+  transform: translateY(30px);
+}
+
+.confusion-disease-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+}
+
+.confusion-disease-card.selected {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 35px 70px rgba(0, 0, 0, 0.35);
+}
+
+/* Card Header */
+.confusion-card-header {
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.confusion-card-header::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+  }
+}
+
+.confusion-icon-wrapper {
+  width: 5.2rem;
+  height: 5rem;
+  margin: 0 auto 1rem;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+}
+
+.confusion-disease-icon {
+  width: 5rem;
+  height: 4.5rem;
+  color: white;
+}
+
+.confusion-disease-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+/* Card Body */
+/*.card-body {
+  padding: 2rem;
+}*/
+
+/* Card Body */
+.confusion-card-body {
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.confusion-info-section {
+  margin-bottom: 1.5rem;
+}
+
+.confusion-section-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #374151;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.confusion-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.confusion-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.confusion-feature-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-top: 0.5rem;
+  flex-shrink: 0;
+}
+
+.confusion-info-text {
+  color: #6b7280;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.confusion-main-symptom-badge {
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Key Differences Section */
+.confusion-key-differences-section {
+  margin-bottom: 4rem;
+}
+
+.confusion-section-main-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.confusion-difference-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.confusion-diff-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.4s;
+  text-align: center;
+}
+
+.confusion-diff-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+}
+
+.confusion-diff-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.confusion-diff-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.confusion-diff-text {
+  color: #6b7280;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.confusion-diff-text strong {
+  color: #0f766e;
+  font-weight: 600;
+}
+
+/* Info Section Bottom */
+.confusion-info-section-bottom {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.confusion-info-content {
+  text-align: center;
+}
+
+.confusion-info-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.confusion-info-description {
+  color: #99f6e4;
+  font-size: 1.125rem;
+  max-width: 48rem;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .confusion-hero-title {
+    font-size: 2.5rem;
+  }
+
+  .confusion-hero-description {
+    font-size: 1rem;
+  }
+
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .confusion-section-main-title {
+    font-size: 2rem;
+  }
+
+  .confusion-difference-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .confusion-info-title {
+    font-size: 1.5rem;
+  }
+
+  .confusion-info-description {
+    font-size: 1rem;
+  }
+}

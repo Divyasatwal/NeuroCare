@@ -1,0 +1,348 @@
+.awareness-banner {
+  width: 100%;
+  padding: 70px 20px;
+  background: #ffffff;
+  overflow: hidden;
+  /* z-index: 9; */
+}
+
+.awareness-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* ========== IMAGE SIDE WITH SHAPES ========== */
+.awareness-images {
+  position: relative;
+  height: 450px;
+}
+
+/* Decorative Shapes */
+.shape {
+  position: absolute;
+  z-index: 0;
+}
+
+/* Half circle - Teal - Top left */
+.shape-circle-1 {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #0f766e 0%, #14b8a6 100%);
+  border-radius: 50%;
+  top: -20px;
+  left: -30px;
+  opacity: 0.8;
+}
+
+/* Half circle - Orange - Bottom right */
+.shape-circle-2 {
+  width: 80px;
+  height: 160px;
+  background: linear-gradient(180deg, #f97316 0%, #fb923c 100%);
+  border-radius: 0 160px 160px 0;
+  bottom: 30px;
+  right: -20px;
+  opacity: 0.9;
+}
+
+/* Dots pattern */
+.shape-dots {
+  width: 80px;
+  height: 80px;
+  bottom: -10px;
+  left: 40px;
+  background-image: radial-gradient(#0f766e 3px, transparent 3px);
+  background-size: 15px 15px;
+  opacity: 0.4;
+}
+
+/* Image Frame 1 - Large */
+.img-frame {
+  position: absolute;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+}
+
+.img-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.img-frame:hover img {
+  transform: scale(1.05);
+}
+
+.img-frame-1 {
+  width: 300px;
+  height: 350px;
+  border-radius: 100px 20px 100px 20px;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  border: 5px solid #ffffff;
+}
+
+/* Image Frame 2 - Small overlapping */
+.img-frame-2 {
+  width: 200px;
+  height: 220px;
+  border-radius: 20px 80px 20px 80px;
+  bottom: 0;
+  right: 40px;
+  z-index: 3;
+  border: 5px solid #ffffff;
+}
+
+/* Ring around image 2 */
+.img-frame-2::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  border: 3px dashed #0f766e;
+  border-radius: 30px 90px 30px 90px;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+/* ========== CONTENT SIDE ========== */
+.awareness-content {
+  padding: 20px 0;
+}
+
+.awareness-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #ccfbf1 0%, #99f6e4 100%);
+  color: #0f766e;
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.awareness-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.awareness-highlight {
+  color: #0f766e;
+  position: relative;
+}
+
+.awareness-highlight::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: rgba(249, 115, 22, 0.3);
+  z-index: -1;
+  border-radius: 4px;
+}
+
+.awareness-description {
+  font-size: 1.1rem;
+  color: #64748b;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.awareness-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.awareness-list li {
+  font-size: 1.2rem;
+  color: #334155;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px dashed #e2e8f0;
+}
+
+.awareness-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  color: #ffffff;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(249, 115, 22, 0.3);
+}
+
+.awareness-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(249, 115, 22, 0.4);
+}
+
+.btn-arrow {
+  font-size: 1.25rem;
+  transition: transform 0.3s ease;
+}
+
+.awareness-btn:hover .btn-arrow {
+  transform: translateX(5px);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1024px) {
+  .awareness-container {
+    gap: 50px;
+  }
+
+  .awareness-images {
+    height: 400px;
+  }
+
+  .img-frame-1 {
+    width: 260px;
+    height: 300px;
+  }
+
+  .img-frame-2 {
+    width: 170px;
+    height: 190px;
+  }
+
+  .awareness-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .awareness-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .awareness-images {
+    height: 380px;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  .img-frame-1 {
+    width: 250px;
+    height: 280px;
+    left: 10px;
+  }
+
+  .img-frame-2 {
+    width: 160px;
+    height: 180px;
+    right: 20px;
+  }
+
+  .awareness-content {
+    text-align: center;
+  }
+
+  .awareness-list {
+    align-items: center;
+  }
+
+  .awareness-list li {
+    justify-content: center;
+    border-bottom: none;
+  }
+
+  .awareness-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .awareness-banner {
+    padding: 50px 15px;
+  }
+
+  .awareness-images {
+    height: 320px;
+    max-width: 350px;
+  }
+
+  .img-frame-1 {
+    width: 200px;
+    height: 230px;
+    border-radius: 60px 15px 60px 15px;
+  }
+
+  .img-frame-2 {
+    width: 130px;
+    height: 150px;
+    border-radius: 15px 50px 15px 50px;
+  }
+
+  .shape-circle-1 {
+    width: 80px;
+    height: 80px;
+  }
+
+  .shape-circle-2 {
+    width: 50px;
+    height: 100px;
+  }
+
+  .awareness-title {
+    font-size: 1.8rem;
+  }
+
+  .awareness-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .awareness-images {
+    height: 280px;
+    max-width: 300px;
+  }
+
+  .img-frame-1 {
+    width: 170px;
+    height: 200px;
+  }
+
+  .img-frame-2 {
+    width: 110px;
+    height: 130px;
+    right: 10px;
+  }
+
+  .awareness-title {
+    font-size: 1.5rem;
+  }
+
+  .awareness-list li {
+    font-size: 0.9rem;
+  }
+}

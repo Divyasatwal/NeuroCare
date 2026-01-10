@@ -1,0 +1,151 @@
+.disease-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+ /* Fixed Sidebar - Add this for SideNavbar */
+.disease-layout .side-navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 340px;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: white;
+  z-index: 100;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+ /*Main Content Area - Updated to account for fixed sidebar */
+.disease-content {
+  flex: 1;
+  margin-left: 340px; /* Add this - same as sidebar width */
+  padding: 1.5rem 3rem 2rem 2rem;
+  overflow-y: auto;
+  background-color:  rgb(200, 226, 232);
+}
+
+/* ADD THIS NEW BLOCK */
+.disease-section {
+  display: flex;
+  flex-direction: column;  /* This forces the text to stack vertically */
+  gap: 0;               /* Adds space between the paragraphs */
+  width: 100%;             /* Ensures it doesn't stretch the screen */
+}
+
+ /* Section Title */
+.disease-section-title {
+  font-size: 1.8rem;
+  color: #116466;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.disease-section-subt{
+  font-size: 1 rem;
+  color: #ae530e;
+   margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.image-container {
+  text-align: center; /* Center the image horizontally */
+  margin-top: 20px;   /* Space above the image */
+}
+
+.disease-image {
+  max-width: 100%;    /* Make it responsive */
+  height: auto;       /* Keep aspect ratio */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Soft shadow for depth */
+}
+
+ /*Section Divider */
+.disease-section-divider {
+  width: 60px;
+  height: 3px;
+  background-color: #d45d00;
+  margin-bottom: 1.5rem;
+}
+
+ /*Section Text */
+.disease-section-text {
+  line-height: 1.7;
+  color: #333;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+ /*Custom Scrollbar for Sidebar */
+/*.disease-layout .side-navbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.disease-layout .side-navbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.disease-layout .side-navbar::-webkit-scrollbar-thumb {
+  background: #116466;
+  border-radius: 4px;
+}
+
+.disease-layout .side-navbar::-webkit-scrollbar-thumb:hover {
+  background: #0d4d4f;
+}*/
+
+/* --- NEW CUSTOM SCROLLBAR FOR CONTENT AREA --- */
+.disease-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.disease-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.disease-content::-webkit-scrollbar-thumb {
+  background: #116466; /* Dark Green theme color */
+  border-radius: 4px;
+}
+
+.disease-content::-webkit-scrollbar-thumb:hover {
+  background: #0d4d4f;
+  
+}
+
+
+
+ /*Responsive Design */
+@media (max-width: 1024px) {
+  .disease-layout .side-navbar {
+    width: 280px;
+  }
+  
+  .disease-content {
+    margin-left: 280px;
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .disease-layout {
+    flex-direction: column;
+  }
+  
+  .disease-layout .side-navbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+  }
+  
+  .disease-content {
+    margin-left: 0;
+    padding: 1rem 1.5rem;
+  }
+  
+  .disease-section-title {
+    font-size: 1.5rem;
+  }
+}

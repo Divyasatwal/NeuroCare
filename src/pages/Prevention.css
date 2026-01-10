@@ -1,0 +1,210 @@
+.prevention-page {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.neuron-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(135deg, #0a1929 0%, #1a2942 100%);
+  z-index: 0;
+}
+
+.prevention-main {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.phero-section {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.picon-circle {
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.picon-teal {
+  background: rgba(20, 184, 166, 0.2);
+  border: 3px solid rgba(20, 184, 166, 0.5);
+}
+
+.phero-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #2dd4bf;
+}
+
+.page-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.page-subtitle {
+  font-size: 1.25rem;
+  color: #99f6e4;
+  max-width: 48rem;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.pcontent-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.pinfo-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s;
+}
+
+.pinfo-card:hover {
+  transform: translateY(-8px);
+}
+
+.pcard-icon-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.icon-teal-color {
+  color: #14b8a6;
+}
+
+.pcard-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.pcard-text {
+  color: #4b5563;
+  line-height: 1.7;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+.tip-box {
+  background: #ccfbf1;
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  border-left: 4px solid #14b8a6;
+  color: #0f766e;
+  font-size: 0.95rem;
+}
+
+.tip-box strong {
+  color: #0d9488;
+}
+
+.lifestyle-section {
+  margin-bottom: 3rem;
+}
+
+.section-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.strategy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.strategy-item {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+
+.strategy-item:hover {
+  transform: translateY(-5px);
+}
+
+.strategy-emoji {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.strategy-item h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.strategy-item p {
+  color: #6b7280;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.detail-section {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  border-radius: 1.5rem;
+  padding: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.detail-text {
+  color: #99f6e4;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2.5rem;
+  }
+
+  .pcontent-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .strategy-grid {
+    grid-template-columns: 1fr;
+  }
+}
