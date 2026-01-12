@@ -1,42 +1,3 @@
-/*import React from "react";
-import "../DiseaseLayout.css";
-
-const Resources = () => {
-  return (
-    <div className="content-section">
-      <h1>Support & Resources</h1>
-
-      <ul>
-        <li>Parkinson’s Foundation</li>
-        <li>Michael J. Fox Foundation</li>
-        <li>World Parkinson Coalition</li>
-        <li>Local neurology clinics and rehabilitation centers</li>
-        <li>Support groups for patients and caregivers</li>
-        <li>Exercise programs (yoga, tai chi, physiotherapy)</li>
-      </ul>
-    </div>
-  );
-};
-
-export default Resources;*/
-
-// import React from "react";
-// import "../DiseaseLayout.css";
-
-// const Resources = () => {
-//   return (
-//     <div className="disease-section">
-//       <h2 className="disease-section-title">Helpful Resources</h2>
-//       <div className="disease-section-divider"></div>
-//       <p className="disease-section-text">
-//         Support groups, therapy options, and Parkinson’s associations can help
-//         patients and caregivers manage the condition.
-//       </p>
-//     </div>
-//   );
-// };
-
-// export default Resources;
 
 import React from "react";
 import "../DiseaseLayout.css";
@@ -63,6 +24,19 @@ const Resources = () => {
 
       <ul className="disease-section-text">
         <li>
+  <b>Parkinson’s Disease Society of India (PDSI):</b> Provides awareness, patient support, and rehabilitation programs across India.
+  <br />Website: <a href="https://pdsiindia.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.pdsiindia.org</a>
+</li>
+<li>
+  <b>Neuroscience Foundation India:</b> Supports neurological disorder patients including Parkinson’s, through advocacy and education.
+  <br />Website: <a href="https://www.neurosciencefoundation.in" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.neurosciencefoundation.in</a>
+</li>
+<li>
+  <b>Alzheimer’s & Dementia India (ADI) – Parkinson’s Support:</b> Some ADI chapters provide support for Parkinson’s patients as well.
+  <br />Website: <a href="https://www.alzheimersindia.org.in" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.alzheimersindia.org.in</a>
+</li>
+
+        <li>
           <b>Parkinson’s Foundation:</b> Offers education, support lines, local resources, and research funding.
           <br />Website: <a href="https://www.parkinson.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.parkinson.org</a>
         </li>
@@ -70,10 +44,7 @@ const Resources = () => {
           <b>Michael J. Fox Foundation (MJFF):</b> The world’s largest nonprofit funder of Parkinson’s research; provides extensive educational materials and tools.
           <br />Website: <a href="https://www.michaeljfox.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.michaeljfox.org</a>
         </li>
-        <li>
-          <b>American Parkinson Disease Association (APDA):</b> Offers nationwide support groups, educational programs, and a helpline.
-          <br />Website: <a href="https://www.apdaparkinson.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.apdaparkinson.org</a>
-        </li>
+       
         <li>
           <b>National Institute of Neurological Disorders and Stroke (NINDS):</b> Provides research updates, treatment guidelines, and scientific resources.
           <br />Website: <a href="https://www.ninds.nih.gov" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.ninds.nih.gov</a>
@@ -89,6 +60,18 @@ const Resources = () => {
       </p>
 
       <ul className="disease-section-text">
+        <li>
+  <b>Parkinson’s Disease Society of India – Caregiver Support:</b> Training, counseling, and guidance for family caregivers.
+</li>
+<li>
+  <b>National Institute of Mental Health & Neurosciences (NIMHANS) – Caregiver Programs:</b> Offers caregiver workshops and education for neurological conditions.
+  <br />Website: <a href="https://www.nimhans.ac.in" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.nimhans.ac.in</a>
+</li>
+<li>
+  <b>Rehabilitation India Foundation:</b> Provides guidance and rehabilitation support for patients and caregivers.
+  <br />Website: <a href="https://www.rehabindia.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.rehabindia.org</a>
+</li>
+
         <li>
           <b>Parkinson’s Foundation Care Partner Program:</b> Workshops, training, and caregiver-specific educational guides.
         </li>
@@ -116,6 +99,15 @@ const Resources = () => {
 
       <ul className="disease-section-text">
         <li>
+  <b>NIMHANS – Parkinson’s Educational Material:</b> Fact sheets, guides, and videos on Parkinson’s symptoms and care.
+  <br />Website: <a href="https://www.nimhans.ac.in/patient-care/education" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.nimhans.ac.in</a>
+</li>
+<li>
+  <b>Parkinson’s Disease Society of India Publications:</b> Educational brochures and newsletters on Parkinson’s management.
+  <br />Website: <a href="https://pdsiindia.org/resources" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.pdsiindia.org/resources</a>
+</li>
+
+        <li>
           <b>Parkinson’s Foundation Forums:</b> Active discussions on symptoms, treatments, and daily challenges.
         </li>
         <li>
@@ -138,8 +130,15 @@ const Resources = () => {
 
       <ul className="disease-section-text">
         <li>
-          <b>Parkinson’s Foundation Educational Library:</b> Free fact sheets, videos, and guides on symptoms and care.
-        </li>
+  <b>NIMHANS – Parkinson’s Educational Material:</b> Fact sheets, guides, and videos on Parkinson’s symptoms and care.
+  <br />Website: <a href="https://www.nimhans.ac.in/patient-care/education" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.nimhans.ac.in</a>
+</li>
+<li>
+  <b>Parkinson’s Disease Society of India Publications:</b> Educational brochures and newsletters on Parkinson’s management.
+  <br />Website: <a href="https://pdsiindia.org/resources" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.pdsiindia.org/resources</a>
+</li>
+
+        
         <li>
           <b>Michael J. Fox Foundation Resources:</b> In-depth articles, webinars, and scientific briefings.
           <br />Website: <a href="https://www.michaeljfox.org/news" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>MJFF Resources</a>
@@ -161,14 +160,21 @@ const Resources = () => {
         Parkinson’s may involve long-term care needs. These resources help manage financial and legal planning:
       </p>
 
-      <ul className="disease-section-text">
+      <ul className="disease-section-text"
+      >
         <li>
-          <b>Medicare.gov:</b> Information on coverage for Parkinson’s treatments, therapy, and hospital care.
+  <b>Employees’ State Insurance (ESI) & Disability Benefits:</b> Support for employees with chronic neurological conditions including Parkinson’s.
+</li>
+<li>
+  <b>National Trust – Disability Support:</b> Provides financial aid, schemes, and legal guidance for persons with neurological disabilities.
+  <br />Website: <a href="https://thenationaltrust.gov.in" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.thenationaltrust.gov.in</a>
+</li>
+
+        <li>
+          <b>Medicare.gov:</b> Information on coverage for Parkinson’s treatments, therapy, and hospital care (US).
           <br />Website: <a href="https://www.medicare.gov" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.medicare.gov</a>
         </li>
-        <li>
-          <b>Social Security Disability Insurance (SSDI):</b> Many Parkinson’s patients qualify for SSDI benefits.
-        </li>
+       
         <li>
           <b>National Academy of Elder Law Attorneys (NAELA):</b> For help with estate planning, long-term care, and disability law.
           <br />Website: <a href="https://www.naela.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.naela.org</a>
@@ -216,10 +222,16 @@ const Resources = () => {
           </thead>
           <tbody>
             <tr>
-              <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>Parkinson’s Foundation Helpline</td>
-              <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}><b>1-800-4PD-INFO</b></td>
-              <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>Expert information, support, and resources</td>
-            </tr>
+              <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>Parkinson’s Disease Society of India Helpline</td>
+  <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}><b>1800-123-3344</b></td>
+  <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>Information and support for Parkinson’s patients in India</td>
+</tr>
+<tr>
+  <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>NIMHANS Neurology Helpline</td>
+  <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}><b>080-26995000</b></td>
+  <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>Expert guidance for patients and caregivers in India</td>
+</tr>
+           
             <tr>
               <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>APDA Helpline</td>
               <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}><b>1-800-223-2732</b></td>
@@ -228,8 +240,9 @@ const Resources = () => {
             <tr>
               <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>National Suicide Prevention Lifeline</td>
               <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}><b>988</b></td>
-              <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>Crisis support for individuals and caregivers</td>
+              <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>Crisis support for individuals and caregivers, US</td>
             </tr>
+            
           </tbody>
         </table>
       </div>
@@ -244,6 +257,13 @@ const Resources = () => {
 
       <ul className="disease-section-text">
         <li>
+  <b>PDSI Mobile App:</b> Provides awareness, symptom tracking, and local support info for Parkinson’s patients in India.
+</li>
+<li>
+  <b>NIMHANS NeuroApp:</b> Tracks neurological symptoms, medication reminders, and access to educational resources.
+</li>
+
+        <li>
           <b>Parkinson mPower:</b> Research-based app for tracking symptoms using smartphone sensors.
         </li>
         <li>
@@ -252,9 +272,7 @@ const Resources = () => {
         <li>
           <b>MyParkinsonsTeam:</b> A social network for patients and caregivers.
         </li>
-        <li>
-          <b>Medisafe:</b> Medication reminder app for managing complex prescriptions.
-        </li>
+       
       </ul>
 
       <div className="disease-section-divider"></div>

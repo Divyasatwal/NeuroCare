@@ -34,8 +34,14 @@ const BipolarResources = () => {
           <br />Website: <a href="https://www.mhanational.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.mhanational.org</a>
         </li>
         <li>
-          <b>International Bipolar Foundation:</b> Provides educational resources, research updates, and support for patients and families globally.
-          <br />Website: <a href="https://ibpf.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.ibpf.org</a>
+          <b>Vandrevala Foundation (India):</b> Provides mental health awareness, counseling, and support programs across India.
+          <br />Helpline: <b>1860-266-2345</b>
+          <br />Website: <a href="https://www.vandrevalafoundation.com" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.vandrevalafoundation.com</a>
+        </li>
+        <li>
+          <b>Mann Talks / Talk to a Mental Health Professional (India):</b> Counseling, therapy, and community support for mental health conditions.
+          <br />WhatsApp / Helpline: <b>+91 72040 33600</b>
+          <br />Website: <a href="https://www.manntalks.com" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.manntalks.com</a>
         </li>
       </ul>
 
@@ -59,6 +65,11 @@ const BipolarResources = () => {
           <b>MHA Caregiver Resources:</b> Guidance on supporting loved ones, managing stress, and accessing services.
           <br />Website: <a href="https://www.mhanational.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.mhanational.org</a>
         </li>
+        <li>
+          <b>iCall – Indian Mental Health Helpline:</b> Offers counseling support to caregivers and patients, including stress management guidance.
+          <br />Helpline: <b>022 25521111</b>
+          <br />Website: <a href="https://www.icallhelpline.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.icallhelpline.org</a>
+        </li>
       </ul>
 
       {/* 3. Online Communities */}
@@ -78,8 +89,8 @@ const BipolarResources = () => {
           <br />Website: <a href="https://www.reddit.com/r/bipolar/" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.reddit.com/r/bipolar</a>
         </li>
         <li>
-          <b>HealthUnlocked Bipolar Community:</b> A moderated online platform where patients and caregivers exchange advice and support.
-          <br />Website: <a href="https://healthunlocked.com" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.healthunlocked.com</a>
+          <b>Mann Talks Community (India):</b> Online group for mental health awareness, peer support, and counseling.
+          <br />Website: <a href="https://www.manntalks.com" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.manntalks.com</a>
         </li>
       </ul>
 
@@ -102,6 +113,10 @@ const BipolarResources = () => {
           <b>MHA Fact Sheets:</b> Evidence-based publications covering symptoms, treatments, and support options.
           <br />Website: <a href="https://www.mhanational.org/conditions/bipolar-disorder" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>MHA Bipolar Disorder</a>
         </li>
+        <li>
+          <b>Vandrevala Foundation Resources (India):</b> Educational materials, webinars, and self-help guides for mental health awareness.
+          <br />Website: <a href="https://www.vandrevalafoundation.com" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.vandrevalafoundation.com</a>
+        </li>
       </ul>
 
       {/* 5. Financial & Legal Support */}
@@ -119,6 +134,10 @@ const BipolarResources = () => {
         <li>
           <b>Mental Health America – Financial Assistance:</b> Information about state-specific programs, grants, and insurance options for mental health care.
           <br />Website: <a href="https://www.mhanational.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.mhanational.org</a>
+        </li>
+        <li>
+          <b>Mann Talks – India:</b> Offers guidance on accessing affordable counseling and therapy services for patients and families.
+          <br />Website: <a href="https://www.manntalks.com" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.manntalks.com</a>
         </li>
       </ul>
 
@@ -150,9 +169,14 @@ const BipolarResources = () => {
               <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>Information, referral, and support for mental health conditions</td>
             </tr>
             <tr>
-              <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>Crisis Text Line</td>
-              <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}><b>Text HOME to 741741</b></td>
-              <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>Free, 24/7 text support for those in crisis</td>
+              <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>iCall Helpline (India)</td>
+              <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}><b>022 25521111</b></td>
+              <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>Confidential counseling and emotional support for individuals and caregivers</td>
+            </tr>
+            <tr>
+              <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>Vandrevala Mental Health Helpline (India)</td>
+              <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}><b>1860-266-2345</b></td>
+              <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>Counseling, emotional support, and guidance for mental health issues</td>
             </tr>
           </tbody>
         </table>
@@ -170,6 +194,8 @@ const BipolarResources = () => {
         <li><b>DBSA Wellness Tracker:</b> Allows users to monitor mood episodes, triggers, and recovery patterns.</li>
         <li><b>Pacifica (now Sanvello):</b> Offers guided mindfulness, cognitive behavioral therapy exercises, and mood tracking.</li>
         <li><b>7 Cups:</b> Provides online chat support with trained listeners and therapists for mental health concerns.</li>
+        <li><b>Mann Talks App (India):</b> Online counseling, self-help modules, and mood management support.</li>
+        <li><b>Vandrevala Foundation App (India):</b> Connects users to mental health counselors and resources across India.</li>
       </ul>
 
       <div className="disease-section-divider"></div>

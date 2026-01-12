@@ -1,22 +1,3 @@
-// import React from "react";
-// import "../DiseaseLayout.css";
-
-// const Resources = () => {
-//   return (
-//     <div>
-//       <h2 className="disease-section-title">Resources</h2>
-//       <div className="disease-section-divider"></div>
-//       <p className="disease-section-text">
-//         Helpful resources include the World Health Organization, Alzheimer’s Association,
-//         and Dementia Research Institute. Support groups and online communities also
-//         provide valuable guidance and emotional support.
-//       </p>
-//     </div>
-//   );
-// };
-
-// export default Resources;
-
 import React from "react";
 import "../DiseaseLayout.css";
 
@@ -42,16 +23,22 @@ const Resources = () => {
       
       <ul className="disease-section-text">
         <li>
-          <b>Alzheimer's Association:</b> Provides support, education, and resources for Alzheimer’s and other types of dementia. Offers a 24/7 helpline (1-800-272-3900), local chapters, support groups, and educational programs.
+          <b>Alzheimer's Association (Global):</b> Provides support, education, and resources for Alzheimer’s and other types of dementia. Offers a 24/7 helpline (1-800-272-3900), local chapters, support groups, and educational programs.
           <br />Website: <a href="https://www.alz.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.alz.org</a>
         </li>
         <li>
-          <b>Dementia Society of America:</b> Offers education, caregiver resources, and support for people with dementia and their families.
+          <b>Dementia Society of America (Global):</b> Offers education, caregiver resources, and support for people with dementia and their families.
           <br />Website: <a href="https://www.dementiasociety.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.dementiasociety.org</a>
         </li>
         <li>
-          <b>National Institute on Aging (NIA):</b> Part of NIH, conducts research and provides information on dementia and age-related cognitive changes.
-          <br />Website: <a href="https://www.nia.nih.gov" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.nia.nih.gov</a>
+          <b>Alzheimer’s & Dementia India (India):</b> National support, helpline, and advocacy for patients and caregivers.
+          <br />Helpline: <b>+91 11 2649 4442</b>
+          <br />Website: <a href="https://www.alzheimersindia.org.in" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.alzheimersindia.org.in</a>
+        </li>
+        <li>
+          <b>Parkinson’s Disease Society of India (India):</b> Support for neurological disorders, including dementia-related guidance.
+          <br />Helpline: <b>1800-180-2567</b>
+          <br />Website: <a href="https://www.pdsiindia.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.pdsiindia.org</a>
         </li>
       </ul>
 
@@ -65,16 +52,18 @@ const Resources = () => {
       
       <ul className="disease-section-text">
         <li>
-          <b>Family Caregiver Alliance:</b> National center on caregiving offering resources, fact sheets, and online support groups.
+          <b>Family Caregiver Alliance (Global):</b> National center on caregiving offering resources, fact sheets, and online support groups.
           <br />Website: <a href="https://www.caregiver.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.caregiver.org</a>
         </li>
         <li>
-          <b>AARP Caregiving Resource Center:</b> Provides tools, tips, and information for family caregivers, including legal and financial planning.
-          <br />Website: <a href="https://www.aarp.org/caregiving" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.aarp.org/caregiving</a>
+          <b>ADI Caregiver Support (India):</b> Counseling and local support groups for caregivers.
+          <br />Helpline: <b>+91 11 2649 4442</b>
+          <br />Website: <a href="https://www.alzheimersindia.org.in" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.alzheimersindia.org.in</a>
         </li>
         <li>
-          <b>Caregiver Action Network:</b> Offers educational resources, peer support, and advocacy for family caregivers.
-          <br />Website: <a href="https://www.caregiveraction.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.caregiveraction.org</a>
+          <b>NIMHANS Caregiver Helpline (India, Bengaluru):</b> Guidance for neurological caregivers.
+          <br />Phone: <b>080-26995000</b>
+          <br />Website: <a href="https://www.nimhans.ac.in" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.nimhans.ac.in</a>
         </li>
       </ul>
 
@@ -88,11 +77,16 @@ const Resources = () => {
       
       <ul className="disease-section-text">
         <li>
-          <b>DementiaCareCentral Forums:</b> Active forum for caregivers to discuss challenges, treatments, and coping strategies.
+          <b>DementiaCareCentral Forums (Global):</b> Active forum for caregivers to discuss challenges, treatments, and coping strategies.
           <br />Website: <a href="https://www.dementiacarecentral.com" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.dementiacarecentral.com</a>
         </li>
         <li>
-          <b>Reddit r/dementia:</b> A supportive community for people affected by dementia and their caregivers.
+          <b>ADI Online Forum (India):</b> Indian caregivers and patients connect for support and guidance.
+          <br />Helpline / WhatsApp: <b>+91 98100 34567</b>
+          <br />Website: <a href="https://www.alzheimersindia.org.in/forum" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.alzheimersindia.org.in/forum</a>
+        </li>
+        <li>
+          <b>Reddit r/dementia:</b> Global community for sharing tips, questions, and lived experiences.
           <br />Website: <a href="https://www.reddit.com/r/dementia" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.reddit.com/r/dementia</a>
         </li>
       </ul>
@@ -101,21 +95,19 @@ const Resources = () => {
       <h2 className="disease-section-subt">
         4. Educational Materials & Publications
       </h2>
-      <p className="disease-section-text">
-        Understanding dementia is crucial for effective management. These resources provide comprehensive educational materials:
-      </p>
-      
       <ul className="disease-section-text">
         <li>
-          <b>Understanding Dementia (Alzheimer's Association):</b> Free educational booklets covering symptoms, diagnosis, treatment, and care planning for all types of dementia.
+          <b>Understanding Dementia (Alzheimer's Association):</b> Global educational booklets covering symptoms, diagnosis, treatment, and care planning.
         </li>
         <li>
-          <b>BrightFocus Foundation:</b> Offers publications, webinars, and research updates on dementia.
-          <br />Website: <a href="https://www.brightfocus.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.brightfocus.org</a>
+          <b>ADI Info Desk (India):</b> Provides booklets, webinars, and caregiver guides.
+          <br />Helpline: <b>+91 11 2649 4442</b>
+          <br />Website: <a href="https://www.alzheimersindia.org.in" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.alzheimersindia.org.in</a>
         </li>
         <li>
-          <b>Mayo Clinic Dementia Center:</b> Comprehensive medical information, treatment options, and lifestyle recommendations.
-          <br />Website: <a href="https://www.mayoclinic.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.mayoclinic.org</a>
+          <b>NIMHANS Neurology Education (India):</b> Educational resources for neurological disorders.
+          <br />Phone: <b>080-26995000</b>
+          <br />Website: <a href="https://www.nimhans.ac.in" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.nimhans.ac.in</a>
         </li>
       </ul>
 
@@ -123,21 +115,20 @@ const Resources = () => {
       <h2 className="disease-section-subt">
         5. Financial & Legal Resources
       </h2>
-      <p className="disease-section-text">
-        Managing the financial and legal aspects of dementia care is essential. These resources can help:
-      </p>
-      
       <ul className="disease-section-text">
         <li>
-          <b>Medicare.gov:</b> Information about Medicare coverage for dementia care, including hospital stays, doctor visits, and hospice care.
+          <b>National Trust – Disability Helpline (India):</b> Financial and legal guidance for elder care.
+          <br />Toll-Free: <b>1800-425-8484</b>
+          <br />Website: <a href="https://thenationaltrust.gov.in" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.thenationaltrust.gov.in</a>
+        </li>
+        <li>
+          <b>ESI / Disability Assistance (India):</b> Social security and disability support.
+          <br />Toll-Free: <b>1800-180-3333</b>
+          <br />Website: <a href="https://www.esic.nic.in" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.esic.nic.in</a>
+        </li>
+        <li>
+          <b>Medicare / Medicaid (Global):</b> Coverage information for dementia care.
           <br />Website: <a href="https://www.medicare.gov" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.medicare.gov</a>
-        </li>
-        <li>
-          <b>Medicaid:</b> State-specific programs that may cover long-term care costs. Contact your state Medicaid office for eligibility information.
-        </li>
-        <li>
-          <b>National Academy of Elder Law Attorneys (NAELA):</b> Find attorneys specializing in elder law, estate planning, and long-term care planning.
-          <br />Website: <a href="https://www.naela.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.naela.org</a>
         </li>
       </ul>
 
@@ -145,14 +136,20 @@ const Resources = () => {
       <h2 className="disease-section-subt">
         6. Research Participation & Clinical Trials
       </h2>
-      <p className="disease-section-text">
-        Participating in research can help advance our understanding of dementia and may provide access to new treatments:
-      </p>
-      
       <ul className="disease-section-text">
         <li>
-          <b>ClinicalTrials.gov:</b> A database of privately and publicly funded clinical studies conducted around the world.
+          <b>ClinicalTrials.gov (Global):</b> Database of clinical studies worldwide.
           <br />Website: <a href="https://www.clinicaltrials.gov" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.clinicaltrials.gov</a>
+        </li>
+        <li>
+          <b>NIMHANS Clinical Research Desk (India):</b> Dementia and neurological research trials.
+          <br />Phone: <b>080-26995000</b>
+          <br />Website: <a href="https://www.nimhans.ac.in/research" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.nimhans.ac.in/research</a>
+        </li>
+        <li>
+          <b>ICMR Clinical Trials (India):</b> Government database for medical research.
+          <br />Phone: <b>011-2373 9000</b>
+          <br />Website: <a href="https://www.icmr.gov.in" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.icmr.gov.in</a>
         </li>
       </ul>
 
@@ -160,19 +157,39 @@ const Resources = () => {
       <h2 className="disease-section-subt">
         7. 24/7 Helplines & Crisis Support
       </h2>
-      <p className="disease-section-text">
-        Immediate support is available when you need it most:
-      </p>
-      
       <ul className="disease-section-text">
         <li>
-          <b>Alzheimer's Association Helpline:</b> 24/7 support for dementia caregivers and patients. 1-800-272-3900
+          <b>Alzheimer's & Dementia India Helpline:</b> +91 11 2649 4442
         </li>
         <li>
-          <b>Eldercare Locator:</b> Connect to local resources and services. 1-800-677-1116
+          <b>Parkinson’s Disease Society of India Helpline:</b> 1800-180-2567
         </li>
         <li>
-          <b>National Suicide Prevention Lifeline:</b> Crisis support for individuals and caregivers. 988
+          <b>NIMHANS Mental Health Helpline:</b> 080-26995000
+        </li>
+        <li>
+          <b>Vandrevala Foundation (Mental Health 24/7):</b> 1860-266-2345
+        </li>
+        <li>
+          <b>AASRA Suicide Prevention Helpline:</b> +91 9820466726
+        </li>
+      </ul>
+
+      {/* 8. Mobile Apps & Digital Tools */}
+      <h2 className="disease-section-subt">
+        8. Mobile Apps & Digital Tools
+      </h2>
+      <ul className="disease-section-text">
+        <li>
+          <b>ADI Mobile App (India):</b> Guides, symptom tracking, and resources.
+          <br />Helpline: +91 11 2649 4442
+        </li>
+        <li>
+          <b>PDSI Mobile App (India):</b> Support for caregivers and patients.
+          <br />Helpline: 1800-180-2567
+        </li>
+        <li>
+          <b>BrightFocus / Global Apps:</b> Symptom trackers, educational tools, and exercises.
         </li>
       </ul>
 
@@ -186,4 +203,3 @@ const Resources = () => {
 };
 
 export default Resources;
-

@@ -22,10 +22,22 @@ const Resources = () => {
       </p>
       
       <ul className="disease-section-text">
+
+  
+ <li>
+  <b>Alzheimer’s & Related Disorders Society of India (ARDSI):</b> Provides support, awareness, and caregiver guidance across India.
+  <br />Website: <a href="https://ardsi.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.ardsi.org</a>
+</li>
+<li>
+  <b>Alzheimer’s & Dementia India (ADI):</b> Provides education, support, and awareness programs for dementia patients and caregivers across India.
+  <br />Website: <a href="https://www.alzheimersindia.org.in" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.alzheimersindia.org.in</a>
+</li>
+
         <li>
           <b>Alzheimer's Association:</b> The leading voluntary health organization in Alzheimer's care, support, and research. Offers a 24/7 helpline (1-800-272-3900), local chapters, support groups, and educational programs.
           <br />Website: <a href="https://www.alz.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.alz.org</a>
         </li>
+             
         <li>
           <b>Alzheimer's Foundation of America (AFA):</b> Provides support services, educational resources, and care consultation through licensed social workers.
           <br />Website: <a href="https://www.alzfdn.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.alzfdn.org</a>
@@ -50,13 +62,16 @@ const Resources = () => {
       
       <ul className="disease-section-text">
         <li>
+  <b>iCall – Mental Health Helpline (TISS):</b> Provides telephonic counseling for caregivers and mental health support.
+  <br />Phone: <b>022-25521111</b>
+  <br />Website: <a href="https://icallhelpline.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.icallhelpline.org</a>
+</li>
+
+        <li>
           <b>Family Caregiver Alliance:</b> National center on caregiving offering resources, fact sheets, and online support groups.
           <br />Website: <a href="https://www.caregiver.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.caregiver.org</a>
         </li>
-        <li>
-          <b>AARP Caregiving Resource Center:</b> Provides tools, tips, and information for family caregivers, including legal and financial planning.
-          <br />Website: <a href="https://www.aarp.org/caregiving" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.aarp.org/caregiving</a>
-        </li>
+       
         <li>
           <b>Caregiver Action Network:</b> Offers educational resources, peer support, and advocacy for family caregivers.
           <br />Website: <a href="https://www.caregiveraction.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.caregiveraction.org</a>
@@ -76,6 +91,11 @@ const Resources = () => {
       </p>
       
       <ul className="disease-section-text">
+        <li>
+  <b>ADI Online Community:</b> Join forums, webinars, and Facebook groups organized by ADI for caregivers and families in India.
+  <br />Website: <a href="https://www.facebook.com/AlzheimersIndia" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.facebook.com/AlzheimersIndia</a>
+</li>
+
         <li>
           <b>ALZConnected:</b> An online community by the Alzheimer's Association where caregivers and individuals with dementia can connect and share.
           <br />Website: <a href="https://www.alzconnected.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.alzconnected.org</a>
@@ -99,9 +119,16 @@ const Resources = () => {
       </p>
       
       <ul className="disease-section-text">
+
+        <li>
+  <b>NIMHANS Dementia Resources:</b> Educational materials, guidelines, and research reports on dementia care in India.
+  <br />Website: <a href="https://nimhans.ac.in" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.nimhans.ac.in</a>
+</li>
+
         <li>
           <b>Understanding Alzheimer's and Dementia (Alzheimer's Association):</b> Free educational booklets covering symptoms, diagnosis, treatment, and care planning.
         </li>
+
         <li>
           <b>BrightFocus Foundation:</b> Offers free publications, webinars, and research updates on Alzheimer's disease.
           <br />Website: <a href="https://www.brightfocus.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.brightfocus.org</a>
@@ -126,20 +153,20 @@ const Resources = () => {
       
       <ul className="disease-section-text">
         <li>
+  <b>HelpAge India:</b> Provides guidance on legal, financial, and social support for senior citizens including dementia patients.
+  <br />Website: <a href="https://www.helpageindia.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.helpageindia.org</a>
+</li>
+
+        <li>
           <b>Medicare.gov:</b> Information about Medicare coverage for Alzheimer's care, including hospital stays, doctor visits, and hospice care.
           <br />Website: <a href="https://www.medicare.gov" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.medicare.gov</a>
         </li>
-        <li>
-          <b>Medicaid:</b> State-specific programs that may cover long-term care costs. Contact your state Medicaid office for eligibility information.
-        </li>
+       
         <li>
           <b>National Academy of Elder Law Attorneys (NAELA):</b> Find attorneys specializing in elder law, estate planning, and long-term care planning.
           <br />Website: <a href="https://www.naela.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.naela.org</a>
         </li>
-        <li>
-          <b>Benefits Checkup (NCOA):</b> A free service to help identify federal, state, and private benefit programs for older adults.
-          <br />Website: <a href="https://www.benefitscheckup.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.benefitscheckup.org</a>
-        </li>
+       
       </ul>
 
       {/* 6. Research & Clinical Trials */}
@@ -184,24 +211,37 @@ const Resources = () => {
           </thead>
           <tbody>
             <tr>
-              <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>Alzheimer's Association Helpline</td>
-              <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}><b>1-800-272-3900</b></td>
-              <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>24/7 support, information, and care consultation</td>
-            </tr>
-            <tr>
-              <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>Eldercare Locator</td>
-              <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}><b>1-800-677-1116</b></td>
-              <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>Connect to local resources and services</td>
-            </tr>
+  <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>iCall – Mental Health Helpline</td>
+  <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}><b>022-25521111</b></td>
+  <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>Mental health support for caregivers and individuals</td>
+</tr>
+<tr>
+  <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>ARDSI Helpline</td>
+  <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}><b>+91 11 2368 4445</b></td>
+  <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>Support for Alzheimer’s patients and caregivers in India</td>
+</tr>
+<tr>
+  <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>KIRAN Helpline:</td>
+  <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}><b>1800-599-0019</b></td>
+  <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>Toll-free, national service by the Ministry of Social Justice & Empowerment</td>
+</tr>
+<tr>
+  <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>Alzheimer’s & Dementia India (ADI) Helpline</td>
+  <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}><b>1800-103-1960</b></td>
+  <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>Support for dementia patients and caregivers in India</td>
+</tr>
+
+         
+           
             <tr>
               <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>National Suicide Prevention Lifeline</td>
               <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}><b>988</b></td>
-              <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>Crisis support for individuals and caregivers</td>
+              <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>Crisis support for individuals and caregivers ,US</td>
             </tr>
             <tr>
               <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>Family Caregiver Alliance</td>
               <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}><b>1-800-445-8106</b></td>
-              <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>Information and support for caregivers</td>
+              <td style={{ padding: "10px", borderBottom: "1px solid #ddd" }}>Information and support for caregivers,US</td>
             </tr>
           </tbody>
         </table>
@@ -217,14 +257,17 @@ const Resources = () => {
       
       <ul className="disease-section-text">
         <li>
+  <b>Minds Foundation App:</b> Mental health awareness and counseling resources across India.
+  <br />Website: <a href="https://mindsfoundation.org" target="_blank" rel="noopener noreferrer" style={{color: '#116466', textDecoration: 'underline'}}>www.mindsfoundation.org</a>
+</li>
+
+        <li>
           <b>MindMate:</b> Brain games, nutrition tips, and exercise routines designed for cognitive health.
         </li>
         <li>
           <b>CareZone:</b> Medication management, appointment tracking, and care coordination tool for families.
         </li>
-        <li>
-          <b>Lotsa Helping Hands:</b> Coordinates community support by organizing meals, rides, and visits.
-        </li>
+       
         <li>
           <b>Dementia Guide (by Alzheimer's Association):</b> Personalized action plans and resources delivered to your phone.
         </li>
