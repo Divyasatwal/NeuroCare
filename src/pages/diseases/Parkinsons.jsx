@@ -81,7 +81,7 @@ const Parkinsons = () => {
           <Route path="treatment" element={<Treatment />} />
           <Route path="prevention" element={<Prevention />} />
           <Route path="statistics" element={<Statistics />} />
-          <Route path="resources" element={<Resources />} />  {/* fixed name */}
+          <Route path="support" element={<Resources />} />  {/* fixed name */}
         </Routes>
       </div>
     </div>
