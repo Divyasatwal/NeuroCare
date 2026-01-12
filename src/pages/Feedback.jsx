@@ -57,6 +57,7 @@ const Feedback = () => {
 import React, { useEffect, useRef, useState } from 'react';
 import { MessageCircle, Send, Star, ThumbsUp, Heart,MessagesSquare,Users} from 'lucide-react';
 import './Feedback.css';
+import api from "../services/api";
 
 
 const Feedback = () => {
@@ -146,18 +147,26 @@ const Feedback = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSubmitted(true);
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+  setSubmitted(true);
+
+  try {
+    await api.submitFeedback({ name, email, rating, message });
+    // Clear form after 3 seconds
     setTimeout(() => {
-      setName('');
-      setEmail('');
+      setName("");
+      setEmail("");
       setRating(0);
-      setMessage('');
+      setMessage("");
       setSubmitted(false);
     }, 3000);
-  };
-
+    
+  } catch (error) {
+    console.error('Error submitting feedback:', error);
+    alert('Failed to submit feedback. Please try again.');
+  } 
+};
   return (
     <div className="feedback-page">
       {/* Animated Neuron Background */}

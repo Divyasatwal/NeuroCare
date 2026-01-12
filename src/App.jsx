@@ -238,6 +238,7 @@ import Homepage from "./pages/Homepage";
 import Awareness from "./pages/Awareness";
 import ConfusionMatrix from "./pages/ConfusionMatrix";
 import Feedback from "./pages/Feedback";
+import Chatbot from "./pages/chatbot"; 
 
 import BrainInfo from './pages/BrainInfo';
 import WarningSigns from './pages/WarningSigns';
@@ -312,6 +313,7 @@ export default function App() {
   return (
     <Router>
       <AppWrapper />
+      <Chatbot />  {/* floating chatbot, always available */}
     </Router>
   );
 }
